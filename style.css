@@ -1,0 +1,76 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.container{
+    height:100vh;
+    background:#fefae0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color:#bc6c25;
+}
+.score-board{
+    padding:2em;
+    width:100%;
+    height:20vh;
+    display:flex;
+    justify-content: space-around;
+    text-align: center;
+    color:#606c38;
+}
+
+.board{
+    width:100%;
+    height:80vh;
+    position: relative;
+}
+.welcome-text{
+    width: 100%;
+    height:50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    position: absolute;
+    opacity: 0;
+    
+}
+.welcome-text button,.options>*{
+    padding:.5em 1em;
+    background: #dda15e;
+    color:#fff;
+    font-size: 20px;
+    border:none;
+    border-radius: .4em;
+}
+.welcome-text button:hover,.options>*:hover{
+    background: #606c38;
+    box-shadow: 0 0 5px #fff;
+}
+.game-board{
+    width: 100%;
+    height:80vh;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+.game-board > *{
+    height:20vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.game-board p{
+    font-size: 30px;
+    color:#606c38;
+}
+.game-board img{
+    width:100px;
+}
